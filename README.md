@@ -5,9 +5,9 @@ Clinica é uma API destinado a estudos feito treinar meus conhecimentos adquerid
 
 O que foi usado:
 
--EntityFarmework Core
--Postgres
--DTO
--AutoMapper
--Swagger
--.net core 5
+-EntityFarmework Core<br>
+-Postgres<br>
+-DTO<br>
+-AutoMapper<br>
+-Swagger<br>
+-.net core 5<br>
