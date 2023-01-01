@@ -37,7 +37,7 @@ namespace Clinica
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             var connectionString = Configuration["dbContextSettings:ConnectionString"];
             services.AddDbContext<ClinicaDbContext>(options =>
-                options.UseNpgsql(connectionString)
+                options.UseSqlServer(connectionString)
             );
 
         }

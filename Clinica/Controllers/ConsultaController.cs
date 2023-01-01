@@ -8,7 +8,7 @@ using System.Linq;
 namespace Clinica.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/api/consulta")]
     public class ConsultaController : ControllerBase
     {
         private ClinicaDbContext _context;

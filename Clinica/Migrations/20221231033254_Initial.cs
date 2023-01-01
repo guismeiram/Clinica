@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Clinica.Migrations
 {
@@ -12,11 +11,11 @@ namespace Clinica.Migrations
                 name: "Consultas",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Numero = table.Column<string>(type: "text", nullable: true),
-                    Data_Hora = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
-                    Especialidades = table.Column<string>(type: "text", nullable: true)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Numero = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Data_Hora = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Especialidades = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
